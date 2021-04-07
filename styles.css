@@ -114,45 +114,6 @@ nav {
   text-align: center;
 }
 
-@media (max-width: 800px) {
-  .nav-ul {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .nav-ul.show {
-    display: flex;
-    margin-top: 2rem;
-  }
-
-  .hamburger {
-    display: block;
-  }
-
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-
-  .iframe-video iframe {
-    height: 15rem;
-  }
-  td,
-  th {
-    padding: 1rem 0.2rem !important;
-  }
-}
-
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -323,4 +284,51 @@ footer {
   background: #000;
   color: #fff;
   padding: 1rem;
+}
+
+/* media queries */
+@media (max-width: 800px) {
+  .nav-ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-ul.show {
+    display: flex;
+    margin-top: 2rem;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .iframe-video iframe {
+    height: 15rem;
+  }
+
+  td,
+  th {
+    padding: 1rem 0 !important;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  #jobs {
+    margin: 0rem;
+  }
 }
