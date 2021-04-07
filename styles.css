@@ -191,6 +191,23 @@ nav {
   justify-content: center;
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE10+ CSS styles go here */
+  .vid-row {
+    width: 100%;
+  }
+
+  .description {
+    text-align: center;
+    max-width: 90%;
+  }
+
+  .headline {
+    padding: 15px;
+    text-align: center;
+  }
+}
+
 .iframe-video iframe {
   flex: 1 1 100rem;
   justify-content: center;
