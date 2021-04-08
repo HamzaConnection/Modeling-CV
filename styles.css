@@ -24,6 +24,13 @@ header {
   box-shadow: 5px -1px 5px 3px #ccc;
   z-index: 1;
 }
+/*Smooth scrolling offset */
+:target:before {
+  content: '';
+  display: block;
+  height: 100px;
+  margin: 0;
+}
 
 .logo {
   font-family: 'Work Sans', sans-serif;
@@ -304,7 +311,7 @@ footer {
 }
 
 /* media queries */
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .nav-ul {
     display: none;
     flex-direction: column;
