@@ -21,6 +21,9 @@ header {
   background-color: #fff;
   position: sticky;
   position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
   top: 0;
   box-shadow: 5px -1px 5px 3px #ccc;
   z-index: 1;
